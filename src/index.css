@@ -44,10 +44,16 @@ h1 {
   font-size: clamp(15px, calc(100vw / 15), 3.2rem);
 
   margin-bottom: 0;
+  color: #333;
 }
 
 h2 {
   font-size: clamp(11px, calc(100vw / 20), 2rem);
+  color: #333;
+}
+ul,
+li {
+  color: #333;
 }
 
 button {
