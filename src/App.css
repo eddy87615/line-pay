@@ -1,0 +1,264 @@
+.body {
+  width: 80vw;
+  height: 100%;
+  max-width: 1240px;
+
+  background-color: #fffff7;
+
+  position: relative;
+  z-index: 1;
+}
+
+.top {
+  height: 100vh;
+}
+
+.img-frame img {
+  width: 100%;
+  height: 70vh;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+.topTitle {
+  height: 30vh;
+  text-align: center;
+
+  background-color: #fffff7;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.topTitle::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  background-image: url(/A_Maple_Icon_Like_MapleStory,May_2022.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+
+  opacity: 0.2;
+}
+.topTitle::before {
+  content: '';
+  width: 50%;
+  height: 50%;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  background-image: url(/A_Maple_Icon_Like_MapleStory,May_2022.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+
+  opacity: 0.4;
+
+  transform: rotate(180deg);
+}
+
+.listTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section {
+  padding: 0 4rem 5rem 4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.giftList {
+  border-radius: 16px;
+  padding: 16px;
+
+  height: 100%;
+
+  box-shadow: #dbdbdb 4px 4px 10px;
+
+  cursor: pointer;
+
+  transition-duration: 0.2s;
+}
+
+.giftItems_show {
+  max-height: 、200px; /* 設定一個夠大的值 */
+  opacity: 1;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+
+  position: relative;
+}
+.giftItems_show ul > li {
+  margin-bottom: 1rem;
+}
+
+.giftItems_hidden {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.giftList:hover {
+  transition-duration: 0.2s;
+  transform: translate(4px, 4px);
+}
+
+.deleteBtn {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  padding: 8px;
+  margin-top: 12px;
+
+  background-color: rgb(50, 50, 50);
+  color: #fff;
+
+  border-radius: 4px;
+  width: fit-content;
+  height: fit-content;
+
+  float: right;
+}
+
+.unrotate {
+  transform: rotate(0deg);
+  transition-duration: 0.3s;
+}
+.rotate {
+  transform: rotate(180deg);
+  transition-duration: 0.3s;
+}
+
+.npc {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  gap: 1rem;
+}
+
+.status-panel {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1001; /* 確保在楓葉之上 */
+  backdrop-filter: blur(5px);
+}
+
+.status-panel h4 {
+  margin: 0 0 10px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.status-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 每行5個 */
+  gap: 5px;
+  max-width: 200px;
+}
+
+.status-item {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.status-item.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.status-item.deleted {
+  background-color: #f44336;
+  color: white;
+  transform: scale(1.1);
+}
+
+.gif {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  height: 50px;
+}
+.gif img {
+  height: 100%;
+}
+
+.feifei {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  animation: feifei 10s infinite linear;
+
+  z-index: 2;
+}
+.feifei img {
+  height: 100px;
+}
+
+@keyframes feifei {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .body {
+    width: 90vw;
+  }
+
+  .img-frame {
+    height: 80vh;
+  }
+
+  .img-frame img {
+    width: 100%;
+    height: 80vh;
+  }
+
+  .topTitle {
+    height: 20vh;
+  }
+
+  .list {
+    padding: 0 2rem 10rem 2rem;
+  }
+}

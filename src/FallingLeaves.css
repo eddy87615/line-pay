@@ -1,0 +1,27 @@
+.leaf {
+  position: absolute;
+  animation-name: fall, sway;
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-150px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(150vh) rotate(360deg);
+  }
+}
+
+@keyframes sway {
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: 30px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
