@@ -32,8 +32,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-<<<<<<< HEAD
-=======
+
   position: relative;
 }
 .topTitle::after {
@@ -69,7 +68,6 @@
   opacity: 0.4;
 
   transform: rotate(180deg);
->>>>>>> origin/master
 }
 
 .listTitle {
@@ -213,11 +211,8 @@ section {
 .gif {
   display: flex;
   align-items: center;
-<<<<<<< HEAD
-  justify-content: flex-end;
-=======
+
   justify-content: space-evenly;
->>>>>>> origin/master
 
   height: 50px;
 }
