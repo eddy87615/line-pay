@@ -1,21 +1,15 @@
 const gifts = [
   {
     id: '01',
-    name: '平凡咒物禮包',
-    items: [
-      { giver: '健太', reward: '剩4卷破披，剩4卷伊卡路斯披風' },
-      { giver: '愛暈船a傑哥', reward: '梅花耳環+1 (3幸)' },
-    ],
-    img: 'npc001.png',
+    name: '來自大冰雷的棒棒1',
+    items: [{ giver: '阿帕', reward: '2222棒冰*1' }],
+    img: '',
   },
   {
     id: '02',
-    name: '特級咒物禮包',
-    items: [
-      { giver: 'YOYO', reward: '背包*2，特級咒物*1' },
-      { giver: '健太', reward: '+2魔翼之杖' },
-    ],
-    img: 'gift001.png',
+    name: '來自大冰雷的棒棒2',
+    items: [{ giver: '阿帕', reward: '2222棒冰*1' }],
+    img: '',
   },
   {
     id: '03',
@@ -30,7 +24,7 @@ const gifts = [
     id: '04',
     name: '平凡的經濟實惠禮包',
     items: [
-      { giver: '睡一下', reward: '100萬' },
+      { giver: '南無加特林菩薩', reward: '200萬' },
       { giver: '啊毓', reward: '20顆傳送石' },
     ],
     img: 'money.png',
@@ -59,9 +53,9 @@ const gifts = [
   },
   {
     id: '08',
-    name: '我要全部！',
-    items: [{ giver: '天晴', reward: '玫瑰耳環*1，+6攻盜賊手套*1' }],
-    img: 'rose.png',
+    name: '來自大冰雷的棒棒3',
+    items: [{ giver: '阿帕', reward: '2222棒冰*1' }],
+    img: '',
   },
   {
     id: '09',
@@ -80,9 +74,9 @@ const gifts = [
   },
   {
     id: '11',
-    name: '很沈重的禮物',
-    items: [{ giver: 'RC', reward: '石巨人石塊*5000' }],
-    img: '_5130102.png',
+    name: '來自大冰雷的棒棒4',
+    items: [{ giver: '阿帕', reward: '2222棒冰*1' }],
+    img: '',
   },
   {
     id: '12',
@@ -117,27 +111,33 @@ const gifts = [
   },
   {
     id: '16',
-    name: '來自大冰雷的棒棒1',
-    items: [{ giver: '阿帕', reward: '2222棒冰*1' }],
-    img: '',
+    name: '平凡咒物禮包',
+    items: [
+      { giver: '健太', reward: '剩4卷破披，剩4卷伊卡路斯披風' },
+      { giver: '愛暈船a傑哥', reward: '梅花耳環+1 (3幸)' },
+    ],
+    img: 'npc001.png',
   },
   {
     id: '17',
-    name: '來自大冰雷的棒棒2',
-    items: [{ giver: '阿帕', reward: '2222棒冰*1' }],
-    img: '',
+    name: '特級咒物禮包',
+    items: [
+      { giver: 'YOYO', reward: '背包*2，特級咒物*1' },
+      { giver: '健太', reward: '+2魔翼之杖' },
+    ],
+    img: 'gift001.png',
   },
   {
     id: '18',
-    name: '來自大冰雷的棒棒3',
-    items: [{ giver: '阿帕', reward: '2222棒冰*1' }],
-    img: '',
+    name: '我要全部！',
+    items: [{ giver: '天晴', reward: '玫瑰耳環*1，+6攻盜賊手套*1' }],
+    img: 'rose.png',
   },
   {
     id: '19',
-    name: '來自大冰雷的棒棒4',
-    items: [{ giver: '阿帕', reward: '2222棒冰*1' }],
-    img: '',
+    name: '很沈重的禮物',
+    items: [{ giver: 'RC', reward: '石巨人石塊*5000' }],
+    img: '_5130102.png',
   },
   {
     id: '20',
@@ -195,7 +195,7 @@ const gifts = [
     name: '大奶姊姊幫你擴',
     items: [
       { giver: '學姊', reward: '背包＊３' },
-      { giver: '南無加特林菩薩', reward: '200萬' },
+      { giver: '睡一下', reward: '100萬' },
     ],
     img: '',
   },
