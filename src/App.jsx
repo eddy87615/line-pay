@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from "react";
 import "./App.css";
 import gifts from "./gift";
@@ -5,6 +6,17 @@ import FallingLeaves from "./FallingLeaves";
 
 import { RxCross2 } from "react-icons/rx";
 import { IoMdArrowDropdown } from "react-icons/io";
+=======
+import { useState } from 'react';
+import './App.css';
+import gifts from './gift';
+import FallingLeaves from './FallingLeaves';
+
+import { RxCross2 } from 'react-icons/rx';
+import { IoMdArrowDropdown } from 'react-icons/io';
+
+import CursorFollower from '../CursorFollower';
+>>>>>>> origin/master
 
 function App() {
   const [openItems, setOpenItems] = useState({});
@@ -53,7 +65,11 @@ function App() {
     const ids = [];
     for (let i = 1; i <= 28; i++) {
       // 假設有01到10
+<<<<<<< HEAD
       ids.push(i.toString().padStart(2, "0"));
+=======
+      ids.push(i.toString().padStart(2, '0'));
+>>>>>>> origin/master
     }
     return ids;
 
@@ -63,6 +79,10 @@ function App() {
 
   return (
     <>
+<<<<<<< HEAD
+=======
+      <CursorFollower />
+>>>>>>> origin/master
       <div className="feifei">
         <img src="/ICb31ih.gif" />
       </div>
@@ -86,10 +106,17 @@ function App() {
                 href={`#${id}`}
                 key={id}
                 className={`status-item ${
+<<<<<<< HEAD
                   deletedItems.has(id) ? "deleted" : "active"
                 }`}
               >
                 {deletedItems.has(id) ? "❌" : id}
+=======
+                  deletedItems.has(id) ? 'deleted' : 'active'
+                }`}
+              >
+                {deletedItems.has(id) ? '❌' : id}
+>>>>>>> origin/master
               </a>
             ))}
           </div>
@@ -111,13 +138,21 @@ function App() {
                 </h3>
                 <div>
                   <IoMdArrowDropdown
+<<<<<<< HEAD
                     className={openItems[index] ? "unrotate" : "rotate"}
+=======
+                    className={openItems[index] ? 'unrotate' : 'rotate'}
+>>>>>>> origin/master
                   />
                 </div>
               </div>
               <div
                 className={
+<<<<<<< HEAD
                   openItems[index] ? "giftItems_show" : "giftItems_hidden"
+=======
+                  openItems[index] ? 'giftItems_show' : 'giftItems_hidden'
+>>>>>>> origin/master
                 }
               >
                 <ul>
@@ -130,12 +165,20 @@ function App() {
 
                 <div key={index} className="npc">
                   {list.img &&
+<<<<<<< HEAD
                     ["02", "03", "04"].includes(list.id) &&
+=======
+                    ['02', '03', '04'].includes(list.id) &&
+>>>>>>> origin/master
                     Array.from({ length: 5 }, (_, index) => (
                       <img key={index} src={list.img} />
                     ))}
                 </div>
+<<<<<<< HEAD
                 {list.img && !["02", "03", "04"].includes(list.id) && (
+=======
+                {list.img && !['02', '03', '04'].includes(list.id) && (
+>>>>>>> origin/master
                   <div className="npc">
                     <img src={list.img} />
                   </div>

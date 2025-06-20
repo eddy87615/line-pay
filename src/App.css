@@ -32,6 +32,44 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+<<<<<<< HEAD
+=======
+  position: relative;
+}
+.topTitle::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  background-image: url(/A_Maple_Icon_Like_MapleStory,May_2022.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+
+  opacity: 0.2;
+}
+.topTitle::before {
+  content: '';
+  width: 50%;
+  height: 50%;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  background-image: url(/A_Maple_Icon_Like_MapleStory,May_2022.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+
+  opacity: 0.4;
+
+  transform: rotate(180deg);
+>>>>>>> origin/master
 }
 
 .listTitle {
@@ -175,7 +213,11 @@ section {
 .gif {
   display: flex;
   align-items: center;
+<<<<<<< HEAD
   justify-content: flex-end;
+=======
+  justify-content: space-evenly;
+>>>>>>> origin/master
 
   height: 50px;
 }
